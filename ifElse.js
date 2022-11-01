@@ -13,3 +13,7 @@ function age(){
         document.getElementById('result').innerHTML = "Invalid"
     }
 }
+
+function Clear(){
+    document.getElementById('result').innerHTML = ''
+}
