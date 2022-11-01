@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of Two Numbers</title>
+</head>
+<body>
+    <h2>Enter the First Number</h2>
+    <input type="number" id="inp1"/>
+
+    <h2>Enter the Second Number</h2>
+    <input type="number" id="inp2"/>
+    </br>
+    </br>
+
+    <h2>Result</h2>
+    <textarea id="result"></textarea>
+    
+    </br>
+    </br>
+    <button onclick="sum()">Add</button>
+
+    <script>
+        function sum(){
+            let inp1 = document.getElementById('inp1');
+            let inp2 = document.getElementById('inp2');
+            let add = parseInt(inp1.value) + parseInt(inp2.value);
+            document.getElementById('result').innerHTML = add; 
+        }
+
+        </script>
+
+</body>
+</html>
